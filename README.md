@@ -17,3 +17,7 @@ WIP: It would be recommended to integrate the database and storages with a back-
 ### K8s
 
 WIP.
+
+### Notes
+
+Once you've run mysql, and changed env vars one time, the next time you run the mysql instance again, it won't let you access it. See discussion and solution here: <https://github.com/docker-library/ghost/issues/378>. Be aware, you'll need to dig deeper and back-up data, because the easy solution will remove the bind volume itself.
